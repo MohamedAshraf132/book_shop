@@ -5,6 +5,16 @@ class SplashscrenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Image.asset('assets/images/Logo.png', height: 100),
+        SizedBox(height: 4),
+        Text(
+          'Read Free Books',
+          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        ),
+      ],
+    );
   }
 }

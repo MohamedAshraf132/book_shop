@@ -1,20 +1,49 @@
 import 'package:flutter/material.dart';
 
-class SplashscrenBody extends StatelessWidget {
-  const SplashscrenBody({super.key});
+class SplashScreenBody extends StatefulWidget {
+  const SplashScreenBody({super.key});
+
+  @override
+  State<SplashScreenBody> createState() => _SplashScreenBodyState();
+}
+
+class _SplashScreenBodyState extends State<SplashScreenBody> {
+  double _opacity = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 500), () {
+      setState(() {
+        _opacity = 1.0;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset('assets/images/Logo.png', height: 100),
-        SizedBox(height: 4),
-        Text(
-          'Read Free Books',
-          style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-        ),
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          AnimatedOpacity(
+            duration: const Duration(seconds: 2),
+            curve: Curves.easeInOut,
+            opacity: _opacity,
+            child: Image.asset('assets/images/Logo.png', height: 100),
+          ),
+          const SizedBox(height: 4),
+          AnimatedOpacity(
+            duration: const Duration(seconds: 2),
+            curve: Curves.easeInOut,
+            opacity: _opacity,
+            child: const Text(
+              'Read Free Books',
+              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

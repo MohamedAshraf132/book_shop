@@ -5,18 +5,21 @@ class HomeAppar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.asset(
-          'assets/images/Logo.png',
-          width: 120,
-        ),
-        SizedBox(width: 200),
-        Icon(
-          Icons.search,
-          size: 32,
-        )
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        children: [
+          Image.asset(
+            'assets/images/Logo.png',
+            width: 120,
+          ),
+          SizedBox(width: 190),
+          Icon(
+            Icons.search,
+            size: 32,
+          )
+        ],
+      ),
     );
   }
 }

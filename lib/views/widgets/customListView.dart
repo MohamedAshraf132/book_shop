@@ -1,57 +1,41 @@
+import 'package:book_shop/views/widgets/cardItem.dart';
 import 'package:flutter/material.dart';
 
-// class CustomListView extends StatelessWidget {
-//   const CustomListView({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 300,
-//       height: 100,
-//       decoration: BoxDecoration(
-//         image: DecorationImage(
-//           image: AssetImage('assets/images/test_image.png'),
-//           fit: BoxFit.fill,
-//         ),
-//       ),
-//     );
-//   }
-// }
-class BookCard extends StatelessWidget {
-  final String image;
-  final String title;
-
-  const BookCard({super.key, required this.image, required this.title});
+class Customlistview extends StatelessWidget {
+  const Customlistview({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(16),
-          child: Image.asset(
-            image,
-            height: 200,
-            width: 130,
-            fit: BoxFit.cover,
-          ),
-        ),
-        Positioned(
-          bottom: 10,
-          right: 10,
-          child: Container(
-            decoration: BoxDecoration(
-              // ignore: deprecated_member_use
-              color: Colors.black.withOpacity(0.6),
-              shape: BoxShape.circle,
+    List<Map<String, String>> books = [
+      {
+        "image": "assets/images/7b4b465f-f181-4cbf-b739-a9ef452f46dc.jpg",
+        "title": "The Jungle Book"
+      },
+      {
+        "image": "assets/images/a6b04532-5fba-4a16-8678-cac051b40c87.jpg",
+        "title": "King Kong"
+      },
+      {
+        "image": "assets/images/c7b1ec95-804a-47e5-8514-674deffc7c7d.jpg",
+        "title": "Another Book"
+      },
+    ];
+    return SizedBox(
+      height: 208,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: books.length,
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(right: 16),
+            child: BookCard(
+              image: books[index]["image"]!,
+              title: books[index]["title"]!,
             ),
-            child: IconButton(
-              icon: const Icon(Icons.play_arrow, color: Colors.white),
-              onPressed: () {},
-            ),
-          ),
-        ),
-      ],
+          );
+        },
+      ),
     );
   }
 }

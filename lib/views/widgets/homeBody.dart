@@ -21,9 +21,12 @@ class HomeBody extends StatelessWidget {
           SizedBox(
             height: 40,
           ),
-          Text(
-            'Best Seller',
-            style: styles.titleMedim,
+          Padding(
+            padding: const EdgeInsets.only(left: 14),
+            child: Text(
+              'Best Seller',
+              style: styles.titleMedim,
+            ),
           )
         ],
       ),

@@ -1,4 +1,3 @@
-import 'package:book_shop/views/widgets/customBottomNavBar.dart';
 import 'package:book_shop/views/widgets/homeBody.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,6 @@ class _HomescreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: HomeBody(),
-      bottomNavigationBar: CustomBottomNavBar(),
     );
   }
 }

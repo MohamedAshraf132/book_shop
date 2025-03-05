@@ -18,20 +18,23 @@ class _HomeBodyState extends State<HomeBody> {
       slivers: [
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                HomeAppar(),
+                Padding(
+                  padding: const EdgeInsets.only(top: 60),
+                  child: HomeAppar(),
+                ),
                 SizedBox(
                   height: 20,
                 ),
                 Customlistview(),
                 SizedBox(
-                  height: 20,
+                  height: 35,
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(left: 14),
+                  padding: const EdgeInsets.only(left: 14, bottom: 10),
                   child: Text(
                     'Best Seller',
                     style: styles.titleMedim,

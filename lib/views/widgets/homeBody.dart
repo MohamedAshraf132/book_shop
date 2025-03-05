@@ -14,32 +14,37 @@ class HomeBody extends StatefulWidget {
 class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          HomeAppar(),
-          SizedBox(
-            height: 20,
-          ),
-          Customlistview(),
-          SizedBox(
-            height: 20,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 14),
-            child: Text(
-              'Best Seller',
-              style: styles.titleMedim,
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                HomeAppar(),
+                SizedBox(
+                  height: 20,
+                ),
+                Customlistview(),
+                SizedBox(
+                  height: 20,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 14),
+                  child: Text(
+                    'Best Seller',
+                    style: styles.titleMedim,
+                  ),
+                ),
+              ],
             ),
           ),
-          SizedBox(
-            height: 10,
-          ),
-          BestsellerlistView(),
-        ],
-      ),
+        ),
+        SliverToBoxAdapter(
+          child: BestsellerlistView(),
+        ),
+      ],
     );
   }
 }

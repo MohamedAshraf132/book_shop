@@ -6,15 +6,16 @@ class Bestsellerlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
             child: Image.asset(
               "assets/images/7b4b465f-f181-4cbf-b739-a9ef452f46dc.jpg",
-              height: 80,
-              width: 60,
+              height: 130,
+              width: 100,
               fit: BoxFit.cover,
             ),
           ),
@@ -24,10 +25,10 @@ class Bestsellerlist extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Harry Potter and Goblet of Fire",
+                  "Harry Potter and Goblet of Fire Fantactic",
                   style: const TextStyle(
                       color: Colors.white,
-                      fontSize: 16,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
@@ -35,7 +36,10 @@ class Bestsellerlist extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   "J.K. Rowling",
-                  style: TextStyle(color: Colors.grey[400]),
+                  style: TextStyle(
+                    color: Colors.grey[400],
+                    fontSize: 15,
+                  ),
                 ),
                 const SizedBox(height: 4),
                 Row(
@@ -43,15 +47,22 @@ class Bestsellerlist extends StatelessWidget {
                     Text(
                       "19.99 €",
                       style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontSize: 19,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
+                    // SizedBox(
+                    //   width: 73,
+                    // ),
                     const Spacer(),
-                    const Icon(Icons.star, color: Colors.amber, size: 18),
+                    const Icon(Icons.star, color: Colors.amber, size: 22),
                     Text(
                       "4.8",
-                      style: const TextStyle(color: Colors.white),
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 17,
+                      ),
                     ),
                     Text(
                       " (2390)",

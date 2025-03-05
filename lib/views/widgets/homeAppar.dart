@@ -8,12 +8,12 @@ class HomeAppar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(
             'assets/images/Logo.png',
             width: 120,
           ),
-          SizedBox(width: 190),
           Icon(
             Icons.search,
             size: 32,

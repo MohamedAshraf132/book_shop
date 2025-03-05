@@ -10,7 +10,7 @@ class Customlistview extends StatelessWidget {
       height: 208,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 3,
+        itemCount: 7,
         padding: const EdgeInsets.symmetric(horizontal: 16),
         itemBuilder: (context, index) {
           return Padding(

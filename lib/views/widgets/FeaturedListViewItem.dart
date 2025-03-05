@@ -1,27 +1,9 @@
 import 'package:flutter/material.dart';
 
-// class CustomListView extends StatelessWidget {
-//   const CustomListView({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       width: 300,
-//       height: 100,
-//       decoration: BoxDecoration(
-//         image: DecorationImage(
-//           image: AssetImage('assets/images/test_image.png'),
-//           fit: BoxFit.fill,
-//         ),
-//       ),
-//     );
-//   }
-// }
-class BookCard extends StatelessWidget {
-  final String image;
-  final String title;
-
-  const BookCard({super.key, required this.image, required this.title});
+class Featuredlistviewitem extends StatelessWidget {
+  const Featuredlistviewitem({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +12,7 @@ class BookCard extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: Image.asset(
-            image,
+            "assets/images/7b4b465f-f181-4cbf-b739-a9ef452f46dc.jpg",
             height: 200,
             width: 130,
             fit: BoxFit.cover,

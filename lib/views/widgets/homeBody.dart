@@ -1,11 +1,17 @@
 import 'package:book_shop/features/styles.dart';
+import 'package:book_shop/views/widgets/BestsellerlistView.dart';
 import 'package:book_shop/views/widgets/customListView.dart';
 import 'package:book_shop/views/widgets/homeAppar.dart';
 import 'package:flutter/material.dart';
 
-class HomeBody extends StatelessWidget {
+class HomeBody extends StatefulWidget {
   const HomeBody({super.key});
 
+  @override
+  State<HomeBody> createState() => _HomeBodyState();
+}
+
+class _HomeBodyState extends State<HomeBody> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,11 +21,11 @@ class HomeBody extends StatelessWidget {
         children: [
           HomeAppar(),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Customlistview(),
           SizedBox(
-            height: 40,
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 14),
@@ -27,7 +33,11 @@ class HomeBody extends StatelessWidget {
               'Best Seller',
               style: styles.titleMedim,
             ),
-          )
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          BestsellerlistView(),
         ],
       ),
     );

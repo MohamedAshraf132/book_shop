@@ -1,8 +1,6 @@
 import 'package:book_shop/const.dart';
 import 'package:book_shop/features/app_router.dart';
-import 'package:book_shop/views/SplashScreen.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {

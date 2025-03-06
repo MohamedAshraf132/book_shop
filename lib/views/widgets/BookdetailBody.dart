@@ -1,3 +1,4 @@
+import 'package:book_shop/views/widgets/customApparDetails.dart';
 import 'package:flutter/material.dart';
 
 class Bookdetailbody extends StatelessWidget {
@@ -6,7 +7,13 @@ class Bookdetailbody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(top: 50),
+          child: customApparDetails(),
+        ),
+      ],
     );
   }
 }

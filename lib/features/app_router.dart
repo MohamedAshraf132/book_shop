@@ -1,4 +1,5 @@
 import 'package:book_shop/views/SplashScreen.dart';
+import 'package:book_shop/views/bookDetailsView.dart';
 import 'package:book_shop/views/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -26,6 +27,12 @@ abstract class AppRouter {
           },
           transitionDuration: Duration(seconds: 1),
         ),
+      ),
+      GoRoute(
+        path: '/BestsellerlistView',
+        builder: (BuildContext context, GoRouterState state) {
+          return const Bookdetailsviewdetails();
+        },
       ),
     ],
   );

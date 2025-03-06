@@ -1,4 +1,4 @@
-import 'package:book_shop/views/widgets/FeaturedListViewItem.dart';
+import 'package:book_shop/views/widgets/CustomBookImage.dart';
 import 'package:flutter/material.dart';
 
 class Customlistview extends StatelessWidget {
@@ -15,7 +15,7 @@ class Customlistview extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(right: 16),
-            child: Featuredlistviewitem(),
+            child: CustomBookImage(),
           );
         },
       ),

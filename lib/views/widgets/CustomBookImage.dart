@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Featuredlistviewitem extends StatelessWidget {
-  const Featuredlistviewitem({
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({
     super.key,
   });
 
@@ -13,8 +13,8 @@ class Featuredlistviewitem extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           child: Image.asset(
             "assets/images/7b4b465f-f181-4cbf-b739-a9ef452f46dc.jpg",
-            height: 200,
-            width: 130,
+            height: 220,
+            width: 140,
             fit: BoxFit.cover,
           ),
         ),

@@ -1,3 +1,4 @@
+import 'package:book_shop/views/widgets/CustomBookImage.dart';
 import 'package:book_shop/views/widgets/customApparDetails.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class Bookdetailbody extends StatelessWidget {
           padding: const EdgeInsets.only(top: 50),
           child: customApparDetails(),
         ),
+        CustomBookImage(),
       ],
     );
   }

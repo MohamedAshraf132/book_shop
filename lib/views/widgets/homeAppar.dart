@@ -14,9 +14,9 @@ class HomeAppar extends StatelessWidget {
             'assets/images/Logo.png',
             width: 120,
           ),
-          Icon(
-            Icons.search,
-            size: 32,
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search, size: 32),
           )
         ],
       ),

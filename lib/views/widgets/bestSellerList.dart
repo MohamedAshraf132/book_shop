@@ -11,7 +11,7 @@ class Bestsellerlist extends StatelessWidget {
         GoRouter.of(context).push('/BestsellerlistView');
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 8),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

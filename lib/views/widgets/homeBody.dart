@@ -1,5 +1,5 @@
 import 'package:book_shop/features/styles.dart';
-import 'package:book_shop/views/widgets/BestsellerlistView.dart';
+import 'package:book_shop/views/BestsellerlistView.dart';
 import 'package:book_shop/views/widgets/customListView.dart';
 import 'package:book_shop/views/widgets/homeAppar.dart';
 import 'package:flutter/material.dart';
@@ -45,7 +45,10 @@ class _HomeBodyState extends State<HomeBody> {
           ),
         ),
         SliverToBoxAdapter(
-          child: BestsellerlistView(),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 19),
+            child: BestsellerlistView(),
+          ),
         ),
       ],
     );

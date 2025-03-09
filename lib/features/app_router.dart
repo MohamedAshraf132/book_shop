@@ -1,6 +1,7 @@
 import 'package:book_shop/views/SplashScreen.dart';
 import 'package:book_shop/views/bookDetailsView.dart';
 import 'package:book_shop/views/homeScreen.dart';
+import 'package:book_shop/views/search_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -11,6 +12,12 @@ abstract class AppRouter {
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
           return const SplashScreen();
+        },
+      ),
+      GoRoute(
+        path: '/SearchView',
+        builder: (BuildContext context, GoRouterState state) {
+          return const SearchView();
         },
       ),
       GoRoute(

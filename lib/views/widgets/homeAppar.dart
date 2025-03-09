@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeAppar extends StatelessWidget {
   const HomeAppar({super.key});
@@ -15,7 +16,9 @@ class HomeAppar extends StatelessWidget {
             width: 120,
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              GoRouter.of(context).push('/SearchView');
+            },
             icon: const Icon(Icons.search, size: 32),
           )
         ],

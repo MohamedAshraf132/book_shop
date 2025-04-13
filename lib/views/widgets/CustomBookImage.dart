@@ -14,7 +14,7 @@ class CustomBookImage extends StatelessWidget {
           child: Image.asset(
             "assets/images/7b4b465f-f181-4cbf-b739-a9ef452f46dc.jpg",
             height: 220,
-            width: 140,
+            width: 120,
             fit: BoxFit.cover,
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:book_shop/features/styles.dart';
-import 'package:book_shop/views/BestsellerlistView.dart';
-import 'package:book_shop/views/widgets/customListView.dart';
-import 'package:book_shop/views/widgets/homeAppar.dart';
+import 'package:book_shop/features/home/presentation/views/widget/BestsellerlistView.dart';
+import 'package:book_shop/features/home/presentation/views/widget/customListView.dart';
+import 'package:book_shop/features/home/presentation/views/widget/homeAppar.dart';
 import 'package:flutter/material.dart';
 
 class HomeBody extends StatefulWidget {

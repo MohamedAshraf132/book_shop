@@ -1,6 +1,6 @@
 import 'package:book_shop/features/styles.dart';
-import 'package:book_shop/views/widgets/search%20widget/customSearchTextField.dart';
-import 'package:book_shop/views/widgets/search%20widget/searchResult.dart';
+import 'package:book_shop/features/splash/presentation/views/widgets/customSearchTextField.dart';
+import 'package:book_shop/features/search/presentation/views/widgets/searchResult.dart';
 import 'package:flutter/material.dart';
 
 class SearchViewBody extends StatelessWidget {

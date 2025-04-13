@@ -1,7 +1,7 @@
-import 'package:book_shop/views/SplashScreen.dart';
-import 'package:book_shop/views/bookDetailsView.dart';
-import 'package:book_shop/views/homeScreen.dart';
-import 'package:book_shop/views/search_view.dart';
+import 'package:book_shop/features/splash/presentation/views/SplashScreen.dart';
+import 'package:book_shop/features/home/presentation/views/bookDetailsView.dart';
+import 'package:book_shop/features/home/presentation/views/homeScreen.dart';
+import 'package:book_shop/features/search/presentation/views/search_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

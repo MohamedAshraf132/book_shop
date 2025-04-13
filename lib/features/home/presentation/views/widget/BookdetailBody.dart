@@ -1,7 +1,7 @@
-import 'package:book_shop/views/widgets/CustomBookImage.dart';
-import 'package:book_shop/views/widgets/bookButtomAction.dart';
-import 'package:book_shop/views/widgets/customApparDetails.dart';
-import 'package:book_shop/views/widgets/customListView.dart';
+import 'package:book_shop/features/home/presentation/views/widget/CustomBookImage.dart';
+import 'package:book_shop/features/home/presentation/views/widget/bookButtomAction.dart';
+import 'package:book_shop/features/home/presentation/views/widget/customApparDetails.dart';
+import 'package:book_shop/features/home/presentation/views/widget/customListView.dart';
 import 'package:flutter/material.dart';
 
 class Bookdetailbody extends StatelessWidget {

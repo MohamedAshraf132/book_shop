@@ -1,4 +1,4 @@
-import 'package:book_shop/views/widgets/homeBody.dart';
+import 'package:book_shop/features/home/presentation/views/widget/homeBody.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

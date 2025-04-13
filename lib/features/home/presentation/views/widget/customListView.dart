@@ -1,4 +1,4 @@
-import 'package:book_shop/views/widgets/CustomBookImage.dart';
+import 'package:book_shop/features/home/presentation/views/widget/CustomBookImage.dart';
 import 'package:flutter/material.dart';
 
 class Customlistview extends StatelessWidget {
